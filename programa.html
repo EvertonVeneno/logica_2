@@ -3,15 +3,28 @@
 <script>
 
 	var ano = 2021;
-	document.write("Everton tem " + (ano - 1988) + " ano");
+	var anoNasEve = 1988;
+	var anoNasManu = 1993;
+	var anoNasMig = 2012;
+	var anoNasNic = 2016;
+	var anoNasEmi = 2021;
+	document.write("Everton tem " + (ano - anoNasEve) + " ano");
 	document.write("<br>");
-	document.write("Manoela tem " + (ano - 1993) + " anos");
+	document.write("Manoela tem " + (ano - anoNasManu) + " anos");
 	document.write("<br>");
-	document.write("Miguel tem " + (ano - 2012) + " anos");
+	document.write("Miguel tem " + (ano - anoNasMig) + " anos");
 	document.write("<br>");
-	document.write("Nicola tem " + (ano - 2016) + " anos");
+	document.write("Nicola tem " + (ano - anoNasNic) + " anos");
 	document.write("<br>");
-	document.write("Emily tem " + (ano - 2021) + " ano");
+	document.write("Emily tem " + (ano - anoNasEmi) + " ano");
+	document.write("<br>");
+	var idadeEve = (ano - anoNasEve);
+	var idadeManu = (ano - anoNasManu);
+	var idadeMig = (ano - anoNasMig);
+	var idadeNic = (ano - anoNasNic);
+	var idadeEmi = (ano - anoNasEmi);
+	var media = (idadeEve + idadeManu + idadeMig + idadeNic + idadeEmi)/5
+	document.write("A media das idades é " + Math.round(media));
 
 
 
