@@ -2,28 +2,35 @@
 
 <script>
 
+	function pularLinha() {
+
+		document.write("<br><br>");
+	}
+
+
 	var ano = 2021;
 	var anoNasEve = 1988;
 	var anoNasManu = 1993;
 	var anoNasMig = 2012;
 	var anoNasNic = 2016;
 	var anoNasEmi = 2021;
+	var puloLinha = "<br>";
 	document.write("Everton tem " + (ano - anoNasEve) + " ano");
-	document.write("<br>");
+	pularLinha();
 	document.write("Manoela tem " + (ano - anoNasManu) + " anos");
-	document.write("<br>");
+	pularLinha();
 	document.write("Miguel tem " + (ano - anoNasMig) + " anos");
-	document.write("<br>");
+	pularLinha();
 	document.write("Nicola tem " + (ano - anoNasNic) + " anos");
-	document.write("<br>");
+	pularLinha();
 	document.write("Emily tem " + (ano - anoNasEmi) + " ano");
-	document.write("<br>");
+	pularLinha();
 	var idadeEve = (ano - anoNasEve);
 	var idadeManu = (ano - anoNasManu);
 	var idadeMig = (ano - anoNasMig);
 	var idadeNic = (ano - anoNasNic);
 	var idadeEmi = (ano - anoNasEmi);
-	var media = (idadeEve + idadeManu + idadeMig + idadeNic + idadeEmi)/5
+	var media = (idadeEve + idadeManu + idadeMig + idadeNic + idadeEmi)/5;
 	document.write("A media das idades é " + Math.round(media));
 
 
