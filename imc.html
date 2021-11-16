@@ -15,15 +15,31 @@
 
 	function calculaIMC(peso, altura) {
 
-		var imc = peso / (altura * altura);
-		mostra("O IMC calculado é " + imc);
+		return peso / (altura * altura);
+		
 	}
 
-	calculaIMC(110, 1.96);
-	calculaIMC(57, 1.62);
-	calculaIMC(26, 1.33);
-	calculaIMC(12, 1.16);
-	calculaIMC(8, 0.80);
+	function pessoa(nome) {
+
+		return (nome);
+
+	}
+
+	
+
+	var imcEve = calculaIMC(110, 1.96);
+	var imcManu = calculaIMC(57, 1.62);
+	var imcMig = calculaIMC(26, 1.33);
+	var imcNic = calculaIMC(12, 1.16);
+	var imcEmi = calculaIMC(8, 0.80);
+
+	mostra(pessoa("Everton") + " tem o IMC de " + imcEve);
+	mostra(pessoa("Manoela") + " tem o IMC de " + imcManu);
+	mostra(pessoa("Miguel") + " tem o IMC de " + imcMig);
+	mostra(pessoa("Nicola") + " tem o IMC de " + imcNic);
+	mostra(pessoa("Emily") + " tem o IMC de " + imcEmi);
+
+	
 
 	//var pesoEve = 110;
 	//var alturaEve = 1.96;
