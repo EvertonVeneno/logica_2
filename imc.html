@@ -19,55 +19,15 @@
 		
 	}
 
-	function pessoa(nome) {
-
-		return (nome);
-
-	}
-
 	
+	var nomeInformado = prompt("Informe seu nome");
+	var alturaInformada  = prompt(nomeInformado + ", informe sua altura.");
+	var pesoInformado = prompt(nomeInformado + ", informe seu peso.");
 
-	var imcEve = calculaIMC(110, 1.96);
-	var imcManu = calculaIMC(57, 1.62);
-	var imcMig = calculaIMC(26, 1.33);
-	var imcNic = calculaIMC(12, 1.16);
-	var imcEmi = calculaIMC(8, 0.80);
+	var imc = calculaIMC(pesoInformado, alturaInformada);
 
-	mostra(pessoa("Everton") + " tem o IMC de " + imcEve);
-	mostra(pessoa("Manoela") + " tem o IMC de " + imcManu);
-	mostra(pessoa("Miguel") + " tem o IMC de " + imcMig);
-	mostra(pessoa("Nicola") + " tem o IMC de " + imcNic);
-	mostra(pessoa("Emily") + " tem o IMC de " + imcEmi);
+	mostra (nomeInformado + " seu IMC é de " + imc);
 
-	
-
-	//var pesoEve = 110;
-	//var alturaEve = 1.96;
-	//var imcEve = pesoEve / (alturaEve * alturaEve);
-	//mostra("O IMC do Everton é " + imcEve);
-
-	//var pesoManu = 57;
-	//var alturaManu = 1.62;
-	//var imcManu = pesoManu / (alturaManu * alturaManu);
-	//mostra("O IMC da Manoela é " + imcManu);
-
-	//var pesoMig = 26;
-	//var alturaMig = 1.33;
-	//var imcMig = pesoMig / (alturaMig * alturaMig);
-	//mostra("O IMC do Miguel é " + imcMig);
-
-	//var pesoNic = 12;
-	//var alturaNic = 1.16;
-	//var imcNic = pesoNic / (alturaNic * alturaNic);
-	//mostra("O IMC do Nicolas é " + imcNic);
-
-	//var pesoEmi = 8;
-	//var alturaEmi = 0.80;
-	//var imcEmi = pesoEmi / (alturaEmi * alturaEmi);
-	//mostra("O IMC da Emily é" + imcEmi);
-
-
-
-
+		
 
 </script>
