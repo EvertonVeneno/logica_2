@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var tabulador = parseInt(prompt("Informe o Tabulador!"));
+
+       for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+        //multiplicador++ é um mesmo que escrever multiplicador = multiplicador + 1
+               mostra(tabulador + " X " + multiplicador + " = " + (tabulador * multiplicador));
+    }
+        
+       
+
+</script>
